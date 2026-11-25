@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Angel's Table Downloads</title>
-<meta name="description" content="Download Angel's Table, a 3D virtual tabletop for the Angel's Sword RPG, for Windows and Android.">
+<meta name="description" content="Download Angel's Table, a 3D virtual tabletop for the Angel's Sword RPG, for Windows, Android and Meta Quest.">
 <link rel="icon" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <style>
@@ -58,13 +58,14 @@
       <p class="sub">A 3D tabletop for the Angel's Sword RPG</p>
     </div>
   </header>
-  <p class="tag">Build your character, set up a map and run the fight with the rules handled for you, at one table or online with friends. Newest build: <span class="version" id="version">v0.9.1</span> (early test version)</p>
+  <p class="tag">Build your character, set up a map and run the fight with the rules handled for you, at one table or online with friends. Newest build: <span class="version" id="version">v0.10.0</span> (early test version)</p>
 
   <div class="shots">
     <figure><img src="combat.jpg" alt="A fight on the 3D table: the turn order on the left, the character's stats, attacks and abilities on the right"><figcaption>Combat: turn order, attacks and abilities</figcaption></figure>
     <figure><img src="gm-tools.jpg" alt="The GM tools window with the encounter builder over the bestiary"><figcaption>GM tools: building an encounter from the bestiary</figcaption></figure>
     <figure><img src="creator.jpg" alt="The character creator's equipment step, with proficient gear listed first"><figcaption>Character creator: every step checked against the rules</figcaption></figure>
     <figure><img src="phone.jpg" alt="The table on a phone, hosting an online game"><figcaption>On a phone: play or run a game as the GM</figcaption></figure>
+    <figure><img src="vr.jpg" alt="Meta Quest view: the map as miniatures on a table in a tavern room, with the app's panels floating around it and a wrist menu"><figcaption>On Meta Quest: miniatures on a real-size table, panels around you</figcaption></figure>
   </div>
 
   <div class="cards">
@@ -78,8 +79,13 @@
       <p>Install the APK (allow installs from your browser when Android asks). Plays sideways. Join a game, or host one as the GM.</p>
       <a class="button" href="https://github.com/RexTheLost/angels-table-builds/releases/latest/download/AngelsTable-android.apk">Download for Android</a>
     </div>
+    <div class="card">
+      <h2>Meta Quest 3 / 3S (VR)</h2>
+      <p>Sideload the APK from a PC with <b>Meta Quest Developer Hub</b> or <b>SideQuest</b> (the headset needs developer mode). Find it under Library, Unknown sources. Controllers. New: not yet tried on a headset.</p>
+      <a class="button" href="https://github.com/RexTheLost/angels-table-builds/releases/latest/download/AngelsTable-quest.apk">Download for Quest</a>
+    </div>
   </div>
-  <p class="tag" style="margin-top:14px">Both versions check for updates when they start and offer the new build on the main menu.</p>
+  <p class="tag" style="margin-top:14px">Every version checks for updates when it starts and tells you on the main menu. Windows and Android install the update for you; on Quest, sideload the new APK the same way.</p>
 
   <section>
     <h3>What's in it</h3>
@@ -91,7 +97,9 @@
       <li><b>GM tools:</b> an encounter builder over the bestiary with a difficulty rating, a "make an enemy" generator, skill-encounter events, group checks, awards (EXP, IP, Clim and items written straight into the sheets) and a player-view fog check.</li>
       <li><b>Online play:</b> the GM hosts, players join with a 6-letter room code and bring their character. Hidden tokens and fogged areas stay hidden from players. If the GM drops, players stay connected and the GM can reopen the room.</li>
       <li><b>Chat, private whispers and trades:</b> talk to the table, whisper to one person (no one else can read it, not even the GM), and trade Clim and items, which only happens once both sides accept.</li>
-      <li><b>Controller support</b> everywhere, and touch controls on phones.</li>
+      <li><b>3D dice</b> tumble onto the table for every roll and land on the result the rules rolled.</li>
+      <li><b>Meta Quest VR:</b> the map as miniatures on a real-size table in a tavern room (or your real room with passthrough). Grab the map to move, turn and stretch it, all the way to life size. Pick up tokens and drop them on a square, throw dice from the dice tray, and keep the same panels as on PC floating around you or standing behind the table like GM screens. A wrist menu has your HP, AP and End turn.</li>
+      <li><b>Controller support</b> everywhere, touch controls on phones, and Quest controllers in VR.</li>
       <li><b>Bug reports and suggestions</b> straight from the app (main menu or the table's Report button).</li>
     </ul>
   </section>
@@ -109,14 +117,15 @@
     <h3>Controls</h3>
     <div class="scroll">
     <table>
-      <tr><th></th><th>Mouse / keyboard</th><th>Controller</th><th>Phone</th></tr>
-      <tr><td>Select a token</td><td>Left-click it</td><td>Stick or D-pad to the token, A</td><td>Tap it</td></tr>
-      <tr><td>Move / pick a target</td><td>Click a highlighted square</td><td>A on the square</td><td>Tap once to preview, tap again to do it</td></tr>
-      <tr><td>Turn the view</td><td>Right-drag</td><td>Right stick</td><td>Twist two fingers</td></tr>
-      <tr><td>Pan</td><td>Middle-drag or WASD</td><td>Move the cursor</td><td>Drag one finger</td></tr>
-      <tr><td>Zoom</td><td>Mouse wheel</td><td>LT / RT</td><td>Pinch</td></tr>
-      <tr><td>End turn</td><td>End turn button</td><td>X</td><td>End turn button</td></tr>
-      <tr><td>Paint the map (GM)</td><td>Turn on Paint, click or drag</td><td>View button, A</td><td>Turn on Paint, drag one finger</td></tr>
+      <tr><th></th><th>Mouse / keyboard</th><th>Controller</th><th>Phone</th><th>Quest</th></tr>
+      <tr><td>Select a token</td><td>Left-click it</td><td>Stick or D-pad to the token, A</td><td>Tap it</td><td>Point and pull the trigger</td></tr>
+      <tr><td>Move / pick a target</td><td>Click a highlighted square</td><td>A on the square</td><td>Tap once to preview, tap again to do it</td><td>Trigger on the square, or grip the token and drop it there</td></tr>
+      <tr><td>Turn the view</td><td>Right-drag</td><td>Right stick</td><td>Twist two fingers</td><td>Grip with both hands and turn, or right stick left / right</td></tr>
+      <tr><td>Pan</td><td>Middle-drag or WASD</td><td>Move the cursor</td><td>Drag one finger</td><td>Grip the air and drag</td></tr>
+      <tr><td>Zoom</td><td>Mouse wheel</td><td>LT / RT</td><td>Pinch</td><td>Grip with both hands and stretch, or right stick up / down</td></tr>
+      <tr><td>End turn</td><td>End turn button</td><td>X</td><td>End turn button</td><td>End turn on the wrist menu</td></tr>
+      <tr><td>Paint the map (GM)</td><td>Turn on Paint, click or drag</td><td>View button, A</td><td>Turn on Paint, drag one finger</td><td>Turn on Paint, hold the trigger and sweep</td></tr>
+      <tr><td>Menus</td><td></td><td></td><td></td><td>Y: wrist menu, X: panels on / off, B: back</td></tr>
     </table>
     </div>
   </section>
