@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Angel's Table Downloads</title>
+<meta name="description" content="Download Angel's Table, a 3D virtual tabletop for the Angel's Sword RPG, for Windows and Android.">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root {
+    --bg: #12131a; --panel: #1d1f2b; --edge: #3a3d52; --text: #ece8dc; --muted: #a3a7ba;
+    --gold: #e2b55a; --ember: #d9773a; --sky: #8fb8e8;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #f6f2e8; --panel: #ffffff; --edge: #d8ccb0; --text: #1f1c16; --muted: #625b4c;
+            --gold: #8a6210; --ember: #a8481a; --sky: #2c5f99; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 system-ui, "Segoe UI", sans-serif; }
+  main { max-width: 900px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 6px; }
+  header img { width: 64px; height: 64px; border: none; border-radius: 12px; flex: none; }
+  h1 { font-size: clamp(2rem, 7vw, 3rem); margin: 0; letter-spacing: 0.03em; color: var(--gold); line-height: 1.1; }
+  .sub { margin: 2px 0 0; color: var(--muted); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; }
+  .tag { color: var(--muted); margin: 14px 0 24px; }
+  .version { color: var(--ember); font-weight: bold; }
+  img { width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--edge); display: block; }
+  figure { margin: 0; }
+  figcaption { color: var(--muted); font-size: 0.85rem; margin-top: 4px; }
+  .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin-bottom: 28px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 14px; }
+  .card { background: var(--panel); border: 1px solid var(--edge); border-radius: 12px; padding: 20px; }
+  .card h2 { margin: 0 0 6px; font-size: 1.3rem; }
+  .card p { margin: 0 0 14px; color: var(--muted); }
+  a.button { display: inline-block; background: linear-gradient(90deg, var(--gold), var(--ember)); color: #1a1408; text-decoration: none;
+             font-weight: 800; padding: 12px 18px; border-radius: 8px; letter-spacing: 0.02em; }
+  a.button:hover { filter: brightness(1.08); }
+  section { margin-top: 34px; }
+  h3 { margin: 0 0 8px; color: var(--gold); font-size: 1.2rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+  td, th { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--edge); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  .scroll { overflow-x: auto; }
+  ul { padding-left: 20px; margin: 0; }
+  li { margin-bottom: 6px; }
+  ol { padding-left: 20px; margin: 0; }
+  footer { margin-top: 44px; color: var(--muted); font-size: 0.85rem; }
+  a { color: var(--sky); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="apple-touch-icon.png" alt="">
+    <div>
+      <h1>Angel's Table</h1>
+      <p class="sub">A 3D tabletop for the Angel's Sword RPG</p>
+    </div>
+  </header>
+  <p class="tag">Build your character, set up a map and run the fight with the rules handled for you, at one table or online with friends. Newest build: <span class="version" id="version">v0.9.1</span> (early test version)</p>
+
+  <div class="shots">
+    <figure><img src="combat.jpg" alt="A fight on the 3D table: the turn order on the left, the character's stats, attacks and abilities on the right"><figcaption>Combat: turn order, attacks and abilities</figcaption></figure>
+    <figure><img src="gm-tools.jpg" alt="The GM tools window with the encounter builder over the bestiary"><figcaption>GM tools: building an encounter from the bestiary</figcaption></figure>
+    <figure><img src="creator.jpg" alt="The character creator's equipment step, with proficient gear listed first"><figcaption>Character creator: every step checked against the rules</figcaption></figure>
+    <figure><img src="phone.jpg" alt="The table on a phone, hosting an online game"><figcaption>On a phone: play or run a game as the GM</figcaption></figure>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h2>Windows (64-bit)</h2>
+      <p>Unzip and run <b>Angels Table.exe</b>. No install. Mouse and keyboard or a controller. If Windows SmartScreen warns you, choose <b>More info</b> then <b>Run anyway</b>.</p>
+      <a class="button" href="https://github.com/RexTheLost/angels-table-builds/releases/latest/download/AngelsTable-windows.zip">Download for Windows</a>
+    </div>
+    <div class="card">
+      <h2>Android (phone)</h2>
+      <p>Install the APK (allow installs from your browser when Android asks). Plays sideways. Join a game, or host one as the GM.</p>
+      <a class="button" href="https://github.com/RexTheLost/angels-table-builds/releases/latest/download/AngelsTable-android.apk">Download for Android</a>
+    </div>
+  </div>
+  <p class="tag" style="margin-top:14px">Both versions check for updates when they start and offer the new build on the main menu.</p>
+
+  <section>
+    <h3>What's in it</h3>
+    <ul>
+      <li><b>Character creator:</b> race and sub-race, stats, breakthroughs, classes, proficiencies, skills and starting equipment, using the official rules data. It checks every step, shows the gear you're proficient with first, and dims anything you can't afford.</li>
+      <li><b>3D table:</b> grid maps you paint yourself (walls, cover, difficult terrain) with fog of war, tokens for characters and monsters, and a dice roller with skill checks and saves.</li>
+      <li><b>Combat with the rules handled:</b> initiative, AP and RP, light, heavy, precise and thrown attacks, Dodge and Block with a preview of the result, cover, opportunity attacks, crits, conditions with durations, and being downed.</li>
+      <li><b>Abilities:</b> costs, timing and limits checked for every ability, plus automatic effects for many of them (damage, healing, conditions, knockback, songs, stances and reactions).</li>
+      <li><b>GM tools:</b> an encounter builder over the bestiary with a difficulty rating, a "make an enemy" generator, skill-encounter events, group checks, awards (EXP, IP, Clim and items written straight into the sheets) and a player-view fog check.</li>
+      <li><b>Online play:</b> the GM hosts, players join with a 6-letter room code and bring their character. Hidden tokens and fogged areas stay hidden from players. If the GM drops, players stay connected and the GM can reopen the room.</li>
+      <li><b>Chat, private whispers and trades:</b> talk to the table, whisper to one person (no one else can read it, not even the GM), and trade Clim and items, which only happens once both sides accept.</li>
+      <li><b>Controller support</b> everywhere, and touch controls on phones.</li>
+      <li><b>Bug reports and suggestions</b> straight from the app (main menu or the table's Report button).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Playing online</h3>
+    <ol>
+      <li>The GM picks <b>Play online</b> then <b>Host a new table</b> and shares the room code.</li>
+      <li>Each player makes a character in the creator, then picks <b>Play online</b>, types the code, picks their character and presses <b>Join</b>.</li>
+      <li>Rejoining from the same PC or phone gives you your character back.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h3>Controls</h3>
+    <div class="scroll">
+    <table>
+      <tr><th></th><th>Mouse / keyboard</th><th>Controller</th><th>Phone</th></tr>
+      <tr><td>Select a token</td><td>Left-click it</td><td>Stick or D-pad to the token, A</td><td>Tap it</td></tr>
+      <tr><td>Move / pick a target</td><td>Click a highlighted square</td><td>A on the square</td><td>Tap once to preview, tap again to do it</td></tr>
+      <tr><td>Turn the view</td><td>Right-drag</td><td>Right stick</td><td>Twist two fingers</td></tr>
+      <tr><td>Pan</td><td>Middle-drag or WASD</td><td>Move the cursor</td><td>Drag one finger</td></tr>
+      <tr><td>Zoom</td><td>Mouse wheel</td><td>LT / RT</td><td>Pinch</td></tr>
+      <tr><td>End turn</td><td>End turn button</td><td>X</td><td>End turn button</td></tr>
+      <tr><td>Paint the map (GM)</td><td>Turn on Paint, click or drag</td><td>View button, A</td><td>Turn on Paint, drag one finger</td></tr>
+    </table>
+    </div>
+  </section>
+
+  <footer>
+    Angel's Table is a fan-made tool for the <a href="https://rpg.angelssword.com">Angel's Sword RPG</a> and isn't made by or affiliated with its creators. The rules text in the app comes from that site.<br>
+    All releases: <a href="https://github.com/RexTheLost/angels-table-builds/releases">github.com/RexTheLost/angels-table-builds/releases</a>
+  </footer>
+</main>
+</body>
+</html>
